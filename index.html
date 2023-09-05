@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Fruity Tutti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="image-container">
+            <h1 class="company">Fruity Tutti 🍉</h1>
+            <img src="./assets/background.svg" alt="">
+            <p class="quote">Sign up today to get your FREE grocery delivery!</p>
+        </div>
+        <div class="form-container">
+            <h1 class="form-head">Get Started 👇</h1>
+            <form action="" id="signUpForm" class="sign-up-form">
+                <div class="sign-up-form-fname">
+                    <label for="fname"></label>
+                    <input type="text" placeholder="First Name *" name="fname" id="fname" required>
+                </div>
+                <div class="sign-up-form-lname">
+                    <label for="lname"></label>
+                    <input type="text" placeholder="Last Name *" name="lname" id="lname" required>
+                </div>
+                <div class="sign-up-form-email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Email *" name="email" id="email" required>
+                </div>
+                <div class="sign-up-form-phone">
+                    <label for="phone"></label>
+                    <input type="tel" placeholder="Phone *" name="phone" id="phone" required>
+                </div>
+                <div class="sign-up-form-password">
+                    <label for="password"></label>
+                    <input type="password" placeholder="Password *" name="password" id="password" required>
+                </div>
+                <div class="sign-up-form-password-confirm">
+                    <label for="password-confirm"></label>
+                    <input type="password" placeholder="Confirm Password *" name="password-confirm" id="password-confirm" required>
+                </div>
+                
+                <div class="button-container">
+                    <p id="message"></p>
+                    <button type="submit" class="submit-button">Create Account</button>
+                    <p class="button-text">Already have an account..?
+                        <span class="log-in">LOG IN</span>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
