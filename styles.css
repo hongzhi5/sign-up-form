@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'SingleDayRegular';
+    src: url('./assets/18938.ttf') format('truetype');
+    font-weight: 900;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'SingleDayRegular', Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    overflow: hidden;
+    background-color: #d65a31;
+}
+main{
+    display: grid;
+    grid-template-columns: calc(100% - 60%) auto;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.image-container{
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color:white;
+}
+.image-container > img{
+    width: 78%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
+}
+.company, 
+.image-container > .quote {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 30px;
+}
+.company {
+    font-size: 48px;
+    font-weight: 2000;
+    text-align: left;
+    height: 70px;
+    align-self: flex-start;
+    padding: 2% 0 0 5%;
+}
+/* form */
+.form-container{
+    display: grid;
+    padding: 50px;
+    color: white;
+    background-color: #d65a31;
+}
+.sign-up-form{
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    color: white;
+    background-color: #d65a31;
+    position: relative;
+    bottom: 50px;
+}
+.form-head{
+    display: grid;
+    grid-column: 1 / -1;
+    letter-spacing: .06em;
+    font-size: 40px;
+    color: white;
+}
+input {
+    grid-area: input;
+    display: inline-block;
+    border-radius: 4px;
+    border: 0;
+    border-bottom: 1px solid rgb(0,0,0,.4);
+    padding: 6px 6px 6px 10px;
+    margin-top: 5px;
+    background-color: #d65a31;
+    transition: all .5s ease-in;
+    color: white;
+    font-size: 25px;
+}
+input::placeholder{
+    color: #f5ddd6;
+}
+input:focus{
+    box-shadow: 5px 5px 10px #fbb040;
+}
+[type="submit"]{
+    border: 0;
+    background-color: #fbb040;
+    color: white;
+    padding: 10px 50px;
+    letter-spacing: .05em;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 25px;
+    outline: none;
+}
+form {
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+.button-text {
+    margin-top: 15px;
+    font-size: 20px;
+}
+.log-in {
+    color: black;
+}
